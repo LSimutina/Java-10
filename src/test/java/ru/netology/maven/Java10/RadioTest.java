@@ -12,6 +12,7 @@ public class RadioTest {
     @Test
     public void test() {
         Radio radio = new Radio();
+
         Assertions.assertEquals(0, radio.getMinRadioNumber());
         Assertions.assertEquals(9, radio.getMaxRadioNumber());
         Assertions.assertEquals(0, radio.getRadioNumber());
@@ -20,6 +21,7 @@ public class RadioTest {
     @Test
     public void testSize() {
         Radio radio = new Radio(10);
+
         Assertions.assertEquals(0, radio.getMinRadioNumber());
         Assertions.assertEquals(9, radio.getMaxRadioNumber());
         Assertions.assertEquals(0, radio.getRadioNumber());
@@ -63,8 +65,7 @@ public class RadioTest {
         Assertions.assertEquals(expected, actual);
     }
 
-//////////// Volume
-
+    //////////// Volume
     @ParameterizedTest //Проверка звука в диапозоне от 0 до 10
     @CsvFileSource(files = "src/test/resources/set_sound.cvs")
     public void shouldSetSoundVolume(int expected, int newSoundVolume) {

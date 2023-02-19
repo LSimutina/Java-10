@@ -4,8 +4,7 @@ public class Radio {
     private int minRadioNumber = 0;
     private int maxRadioNumber = 9;
     private int radioNumber = minRadioNumber;
-    private int sizeRadio=10;
-
+    private int sizeRadio = 10;
     private int minSoundVolume = 0;
     private int maxSoundVolume = 100;
     private int soundVolume = minSoundVolume;
