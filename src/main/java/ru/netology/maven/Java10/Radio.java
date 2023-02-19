@@ -4,6 +4,7 @@ public class Radio {
     private int minRadioNumber = 0;
     private int maxRadioNumber = 9;
     private int radioNumber = minRadioNumber;
+    private int sizeRadio=10;
 
     private int minSoundVolume = 0;
     private int maxSoundVolume = 100;
@@ -13,9 +14,9 @@ public class Radio {
     public Radio() {
     }
 
-    public Radio(int sizeRadio) {
-        sizeRadio = sizeRadio - 1;
-        maxRadioNumber = minRadioNumber + sizeRadio;
+    public Radio(int size) {
+        this.sizeRadio = size - 1;
+        this.maxRadioNumber = minRadioNumber + sizeRadio;
     }
 
     public int getMinRadioNumber() {
